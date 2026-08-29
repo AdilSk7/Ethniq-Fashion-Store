@@ -25,47 +25,20 @@ This project was built using modern web development standards with zero bulky UI
 *   **Icons**: React Icons (Feather Icons)
 *   **Notifications**: React Hot Toast
 
-## 🚀 Local Development
+## 🛍️ About the Business
 
-Follow these steps to run the store locally on your own machine:
+**Dakshayani Shopping Mall** is a premier destination for high-quality, authentic Indian ethnic wear alongside modern fashion for all ages. We take pride in delivering elegance, tradition, and trendsetting styles straight to our customers. 
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/AdilSk7/Ethniq-Fashion-Store.git
-    cd Ethniq-Fashion-Store
-    ```
+*   **Premium Quality**: Curated materials and exquisite detailed craftsmanship.
+*   **Vast Collections**: Bridal, traditional sarees, party wear, western wear, and kids' fashion.
+*   **Customer First**: We offer seamless online browsing combined with direct WhatsApp integration to ensure personal, one-on-one customer service for every purchase.
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+## 📞 Contact & Support
 
-3.  **Start the development server:**
-    ```bash
-    npm run dev
-    ```
+For business inquiries, support, or direct sales assistance:
 
-4.  **Open in your browser:**
-    Navigate to `http://localhost:5173` to view the application.
-
-## 📁 Project Structure
-
-*   **/src/components/** - Reusable UI elements (Navbar, Footer, Product Cards).
-*   **/src/pages/** - Core customer-facing screens (Home, Shop, Cart, Profile).
-*   **/src/admin/** - Isolated administration dashboard (Auth, Product manager, Analytics).
-*   **/src/context/** - Global React state management (Auth, Cart, Wishlist, Settings).
-*   **/src/services/** - Firebase controller logic executing external database queries.
-*   **/src/firebase/** - Core initialization and connectivity config.
-
-## 📡 Deployment
-
-The application is configured to deploy directly to Firebase Hosting.
-Run the following build script to bundle production assets and push them live:
-
-```bash
-npm run build
-npx firebase-tools deploy --only hosting
-```
+*   **Store Layout**: View all collections securely via our mobile-first web app.
+*   **Order Enquiries**: Customers can place orders directly to our official WhatsApp support pipeline for immediate assistance.
 
 ---
-*Built with React & Firebase.*
+*Developed for Dakshayani Shopping Mall to provide an elite digital shopping experience.*
