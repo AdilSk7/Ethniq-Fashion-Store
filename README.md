@@ -1,16 +1,71 @@
-# React + Vite
+# Dakshayani Shopping Mall 🛍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to the **Dakshayani Shopping Mall** (Ethniq Fashion Store) repository! This is a modern, fully-featured e-commerce web application designed for a premium clothing retailer serving traditional and modern aesthetics.
 
-Currently, two official plugins are available:
+## 🌟 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Responsive Customer Interface**: A beautifully designed, mobile-first frontend experience where customers can browse categories, view product galleries, explore new arrivals, and place orders directly to WhatsApp.
+*   **Intuitive E-Commerce Flow**: Real-time cart management, localized pricing, product galleries, and a frictionless "checkout via WhatsApp" pipeline avoiding complex payment gateways.
+*   **Customer Profiles & Wishlists**: Integrated Firebase authentication gives customers persistent access to their order history, saved favorites, and enquiries across devices.
+*   **Powerful Admin Dashboard**: A secure, isolated portal allowing store owners to:
+    *   Manage product listings, categories, and promotional banners.
+    *   Monitor and review daily store analytics.
+    *   Respond directly to customer enquiries and order submissions.
+    *   Control backend store settings (WhatsApp routing, emails).
 
-## React Compiler
+## 🛠️ Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was built using modern web development standards with zero bulky UI frameworks, opting for pure React and custom CSS for absolute design control.
 
-## Expanding the Oxlint configuration
+*   **Frontend**: React (Vite)
+*   **Routing**: React Router DOM
+*   **Styling**: Pure CSS (Custom responsive grid systems and variables)
+*   **Database & Auth**: Google Firebase (Firestore Database, Firebase Authentication)
+*   **Deployment**: Firebase Hosting
+*   **Icons**: React Icons (Feather Icons)
+*   **Notifications**: React Hot Toast
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Local Development
+
+Follow these steps to run the store locally on your own machine:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/AdilSk7/Ethniq-Fashion-Store.git
+    cd Ethniq-Fashion-Store
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in your browser:**
+    Navigate to `http://localhost:5173` to view the application.
+
+## 📁 Project Structure
+
+*   **/src/components/** - Reusable UI elements (Navbar, Footer, Product Cards).
+*   **/src/pages/** - Core customer-facing screens (Home, Shop, Cart, Profile).
+*   **/src/admin/** - Isolated administration dashboard (Auth, Product manager, Analytics).
+*   **/src/context/** - Global React state management (Auth, Cart, Wishlist, Settings).
+*   **/src/services/** - Firebase controller logic executing external database queries.
+*   **/src/firebase/** - Core initialization and connectivity config.
+
+## 📡 Deployment
+
+The application is configured to deploy directly to Firebase Hosting.
+Run the following build script to bundle production assets and push them live:
+
+```bash
+npm run build
+npx firebase-tools deploy --only hosting
+```
+
+---
+*Built with React & Firebase.*
