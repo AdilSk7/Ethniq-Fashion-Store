@@ -1,6 +1,6 @@
-# Dakshayani Shopping Mall 🛍️
+# Ethniq Fashion Store 🛍️
 
-Welcome to the **Dakshayani Shopping Mall** (Ethniq Fashion Store) repository! This is a modern, fully-featured e-commerce web application designed for a premium clothing retailer serving traditional and modern aesthetics.
+Welcome to the **Ethniq Fashion Store**! This is a modern, fully-featured e-commerce web application designed for a premium clothing retailer serving traditional and modern aesthetics.
 
 ## 🌟 Key Features
 
@@ -27,7 +27,7 @@ This project was built using modern web development standards with zero bulky UI
 
 ## 🛍️ About the Business
 
-**Dakshayani Shopping Mall** is a premier destination for high-quality, authentic Indian ethnic wear alongside modern fashion for all ages. We take pride in delivering elegance, tradition, and trendsetting styles straight to our customers. 
+**Ethniq Fashion Store** is a premier destination for high-quality, authentic Indian ethnic wear alongside modern fashion for all ages. We take pride in delivering elegance, tradition, and trendsetting styles straight to our customers. 
 
 *   **Premium Quality**: Curated materials and exquisite detailed craftsmanship.
 *   **Vast Collections**: Bridal, traditional sarees, party wear, western wear, and kids' fashion.
