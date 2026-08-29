@@ -1,0 +1,124 @@
+.contact-container { padding: 3rem 1.5rem 5rem; }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-info h2, .contact-form-wrap h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.contact-info > p, .contact-form-wrap > p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  border: var(--border-gold);
+  transition: var(--transition);
+  color: var(--text-dark);
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.contact-card-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--gold);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.contact-card h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.15rem;
+}
+
+.contact-card span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.map-embed {
+  margin-top: 1.25rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: var(--border-gold);
+}
+
+/* Form */
+.contact-form-wrap {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  border: var(--border-light);
+}
+
+.success-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #D4EDDA;
+  border: 1px solid #C3E6CB;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--success);
+}
+
+.success-banner p { color: var(--success); font-size: 0.85rem; margin-top: 0.2rem; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-form { margin-top: 1.25rem; }
+
+@media (max-width: 1024px) {
+  .contact-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-wrap { padding: 1.5rem; }
+}

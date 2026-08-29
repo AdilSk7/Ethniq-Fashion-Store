@@ -1,0 +1,240 @@
+.admin-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  border-right: 1px solid rgba(201,168,76,0.15);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+.admin-sidebar.collapsed { width: 68px; }
+
+/* Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+  min-height: 70px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.sidebar-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--gold-gradient);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-dark);
+  font-family: var(--font-telugu);
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sidebar-logo-name {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+}
+
+.sidebar-logo-sub {
+  font-size: 0.65rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.sidebar-collapse-btn {
+  width: 28px;
+  height: 28px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+  border: none;
+}
+
+.sidebar-collapse-btn:hover { background: rgba(201,168,76,0.15); color: var(--gold); }
+
+/* Nav */
+.sidebar-nav {
+  flex: 1;
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius-md);
+  color: rgba(255,255,255,0.55);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar-link:hover {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.9);
+}
+
+.sidebar-link.active {
+  background: rgba(201,168,76,0.12);
+  color: var(--gold);
+  border-left: 3px solid var(--gold);
+  padding-left: calc(0.75rem - 3px);
+}
+
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Footer */
+.sidebar-footer {
+  padding: 0.75rem;
+  border-top: 1px solid rgba(201,168,76,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.user-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.user-email {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 140px;
+}
+
+.logout-btn { color: rgba(255,255,255,0.4); }
+.logout-btn:hover { background: rgba(192,57,43,0.15); color: #E74C3C; }
+
+/* Mobile Overlay Drawer styles */
+.mobile-admin-toggle {
+  display: none;
+}
+.mobile-admin-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100vh;
+    transform: translateX(0);
+    width: 250px !important;
+  }
+
+  .admin-sidebar.collapsed {
+    transform: translateX(-100%);
+  }
+
+  /* Don't shrink the sidebar body width even when collapsed on mobile */
+  .admin-sidebar .sidebar-logo, 
+  .admin-sidebar .sidebar-label, 
+  .admin-sidebar .sidebar-user {
+    display: flex !important;
+  }
+
+  /* Hide the native collapse button on mobile */
+  .sidebar-collapse-btn {
+    display: none !important;
+  }
+
+  .mobile-admin-toggle {
+    display: flex;
+    position: fixed;
+    top: 8px;
+    left: 10px;
+    z-index: 999;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .mobile-admin-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+    backdrop-filter: blur(2px);
+  }
+}
