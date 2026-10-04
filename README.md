@@ -40,5 +40,4 @@ For business inquiries, support, or direct sales assistance:
 *   **Store Layout**: View all collections securely via our mobile-first web app.
 *   **Order Enquiries**: Customers can place orders directly to our official WhatsApp support pipeline for immediate assistance.
 
----
-*Developed for Dakshayani Shopping Mall to provide an elite digital shopping experience.*
+
